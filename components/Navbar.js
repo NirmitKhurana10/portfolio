@@ -10,6 +10,7 @@ export default function Navbar() {
   const pages = [
     'About',
     'Projects',
+    'Certifications',
     'Work',
     'Contact',
   ]

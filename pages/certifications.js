@@ -17,6 +17,31 @@ export async function getStaticProps() {
     return { props: meta }
 }
 
+// Sample certification data - you can replace with real data later
+const certifications = [
+    {
+        id: 1,
+        name: 'Microsoft Certified: Data Analyst Associate',
+        issuer: 'Microsoft',
+        date: 'January 2024',
+        image: '/static/images/cert-placeholder.jpg',
+    },
+    {
+        id: 2,
+        name: 'Google Data Analytics Professional Certificate',
+        issuer: 'Google',
+        date: 'December 2023',
+        image: '/static/images/cert-placeholder.jpg',
+    },
+    {
+        id: 3,
+        name: 'Tableau Desktop Specialist',
+        issuer: 'Tableau',
+        date: 'November 2023',
+        image: '/static/images/cert-placeholder.jpg',
+    },
+]
+
 function Certifications() {
     return (
         <>
@@ -39,11 +64,29 @@ function Certifications() {
             </Head>
 
             <Container>
-                <h1>Certifications</h1>
-                <ComingSoon>
-                    <p>🏆 This page is under construction</p>
-                    <p>Coming soon: My professional certifications and credentials</p>
-                </ComingSoon>
+                <h1>Certifications & Credentials</h1>
+                <Description>
+                    Professional certifications that validate my expertise in data analytics, business intelligence, and related technologies.
+                </Description>
+
+                <CertificationsList>
+                    {certifications.map((cert) => (
+                        <CertificationItem key={cert.id}>
+                            <CertImageWrapper>
+                                <CertImagePlaceholder>
+                                    <CertIcon className="ri-award-fill" />
+                                </CertImagePlaceholder>
+                            </CertImageWrapper>
+                            <CertDetails>
+                                <CertName>{cert.name}</CertName>
+                                <CertMeta>
+                                    <CertIssuer>{cert.issuer}</CertIssuer>
+                                    <CertDate>• {cert.date}</CertDate>
+                                </CertMeta>
+                            </CertDetails>
+                        </CertificationItem>
+                    ))}
+                </CertificationsList>
             </Container>
         </>
     )
@@ -51,18 +94,108 @@ function Certifications() {
 
 const Container = styled('div', {
     marginTop: '60px',
+    maxWidth: '900px',
+    margin: '60px auto 0',
+    padding: '0 20px',
 })
 
-const ComingSoon = styled('div', {
-    textAlign: 'center',
-    padding: '60px 20px',
-    opacity: 0.7,
-    '& p:first-child': {
-        fontSize: '48px',
-        marginBottom: '20px',
+const Description = styled('p', {
+    fontSize: '16px',
+    lineHeight: '1.6',
+    color: '$secondary',
+    marginBottom: '40px',
+})
+
+const CertificationsList = styled('div', {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '24px',
+})
+
+const CertificationItem = styled('div', {
+    display: 'flex',
+    gap: '24px',
+    padding: '20px',
+    background: '$hover',
+    borderRadius: '$borderRadius',
+    transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+
+    '&:hover': {
+        transform: 'translateY(-2px)',
+        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
     },
-    '& p:last-child': {
-        fontSize: '16px',
+
+    '@bp1': {
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+    },
+})
+
+const CertImageWrapper = styled('div', {
+    flexShrink: 0,
+})
+
+const CertImagePlaceholder = styled('div', {
+    width: '120px',
+    height: '120px',
+    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    borderRadius: '8px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    '@bp1': {
+        width: '100px',
+        height: '100px',
+    },
+})
+
+const CertIcon = styled('i', {
+    fontSize: '48px',
+    color: 'white',
+    opacity: 0.9,
+})
+
+const CertDetails = styled('div', {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    flex: 1,
+})
+
+const CertName = styled('h3', {
+    fontSize: '20px',
+    fontWeight: 600,
+    margin: '0 0 8px 0',
+    color: '$primary',
+
+    '@bp1': {
+        fontSize: '18px',
+    },
+})
+
+const CertMeta = styled('div', {
+    display: 'flex',
+    gap: '8px',
+    fontSize: '14px',
+    color: '$secondary',
+
+    '@bp1': {
+        flexDirection: 'column',
+        gap: '4px',
+    },
+})
+
+const CertIssuer = styled('span', {
+    fontWeight: 500,
+})
+
+const CertDate = styled('span', {
+    '@bp1': {
+        '&::before': {
+            content: 'none',
+        },
     },
 })
 

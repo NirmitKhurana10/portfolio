@@ -15,6 +15,7 @@ const Lottie = dynamic(() => import('lottie-react'), { ssr: false })
 const navItems = [
   { path: '/about', icon: aboutIcon, label: 'About' },
   { path: '/projects', icon: projectsIcon, label: 'Projects' },
+  { path: '/certifications', icon: aboutIcon, label: 'Certifications' },
   { path: '/work', icon: workIcon, label: 'Work' },
   { path: '/contact', icon: emailIcon, label: 'Contact' },
 ]
