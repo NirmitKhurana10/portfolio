@@ -7,20 +7,18 @@ import Base from '../layouts/Base'
 import stripHtml from '../lib/strip-html'
 import { styled } from '../stitches.config'
 
+
 export async function getStaticProps() {
     const meta = {
         title: 'Certifications // Nirmit Khurana',
-        description:
-            'Professional certifications and credentials in Data Analytics and Business Intelligence.',
-        tagline: 'Certifications & Credentials',
+        tagline: 'Learn. Validate. Excel.',
         image: '/static/images/certifications-bw.jpg',
         primaryColor: 'purple',
-        secondaryColor: 'blue',
+        secondaryColor: 'cyan',
     }
 
     return { props: meta }
 }
-
 // Certification data with the structure you requested
 const certifications = [
     // Completed Certifications
@@ -165,7 +163,7 @@ function Certifications() {
             <AnimateSharedLayout>
                 <p dangerouslySetInnerHTML={{ __html: description }} />
 
-                <h2>Certifications</h2>
+                <SectionHeader>Certifications</SectionHeader>
                 <SearchInput
                     type="text"
                     placeholder="Search by name, issuer, or category..."
@@ -239,6 +237,14 @@ const SearchInput = styled('input', {
         fontSize: '15px',
         padding: '10px 8px',
     },
+})
+
+const SectionHeader = styled('h2', {
+    fontSize: '28px',
+    fontWeight: '600',
+    color: '$primary',
+    marginTop: '40px',
+    marginBottom: '30px',
 })
 
 const NoResults = styled('div', {

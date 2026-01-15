@@ -10,7 +10,7 @@ import { motion } from 'framer-motion'
 
 export async function getStaticProps() {
   const meta = {
-    title: 'Contact // Parth Desai',
+    title: 'Contact // Nirmit Khurana',
     tagline: 'Email me. Like in the old days.',
     image: '/static/images/contact-bw.jpg',
     primaryColor: 'cyan',
@@ -22,7 +22,7 @@ export async function getStaticProps() {
 
 function Contact(props) {
   const { title, image } = props
-  const description = `<strong>I love chatting</strong> with software engineers, tech founders, students, and geeks. I promise that I'll try to reply to your email in a timely manner.`
+  const description = `<strong>I love chatting</strong> with software engineers, data scientists, tech founders, students, and geeks. I promise that I'll try to reply to your email in a timely manner.`
   const [isEmailSent, setIsEmailSent] = React.useState(undefined)
   const [showToast, setShowToast] = React.useState(false)
   const [turnstileToken, setTurnstileToken] = React.useState(null)
@@ -197,15 +197,15 @@ function Contact(props) {
             isEmailSent === undefined
               ? ''
               : isEmailSent
-              ? 'Email sent :D'
-              : 'Error :('
+                ? 'Email sent :D'
+                : 'Error :('
           }
           description={
             isEmailSent === undefined
               ? ''
               : isEmailSent
-              ? 'Thanks for taking the time to write it.'
-              : 'Something wrong happened. Try again later.'
+                ? 'Thanks for taking the time to write it.'
+                : 'Something wrong happened. Try again later.'
           }
           isSuccess={isEmailSent}
           showToast={showToast}

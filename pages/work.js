@@ -12,7 +12,7 @@ import { styled } from '../stitches.config'
 export async function getStaticProps() {
   const meta = {
     title: 'Work // Nirmit Khurana',
-    tagline: 'Data Engineering. Analytics. Automation.',
+    tagline: 'Analyze. Transform. Deliver.',
     image: '/static/images/work-bw.jpg',
     primaryColor: 'purple',
     secondaryColor: 'cyan',
