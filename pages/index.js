@@ -108,6 +108,7 @@ export default function Index(props) {
   const [isHovering, setIsHovering] = useState(false)
   const companies = [
     { name: 'IKEA', color: '#FFDB00' },
+    { name: 'Decimal Technologies', color: '#0752a8' },
   ]
 
   return (
@@ -117,8 +118,8 @@ export default function Index(props) {
         <meta content={title} property="og:title" />
         <meta content={description} name="description" />
         <meta content={description} property="og:description" />
-        <meta content="https://nirmitkhurana.com" property="og:url" />
-        <meta content={`https://nirmitkhurana.com${image}`} property="og:image" />
+        <meta content="https://nirmitkhurana.site" property="og:url" />
+        <meta content={`https://nirmitkhurana.site{image}`} property="og:image" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
