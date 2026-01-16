@@ -29,8 +29,8 @@ const certifications = [
         status: 'Completed',
         tags: ['Tableau', 'Data Visualization', 'Analytics'],
         issued: '2025',
-        certLink: 'https://www.linkedin.com/learning/certificates/',
-        linkedInLink: 'https://www.linkedin.com/feed/',
+        certLink: 'https://www.linkedin.com/learning/tableau-essential-training-29553026/apply-the-power-of-tableau-2025-to-your-data',
+        linkedInLink: 'https://www.linkedin.com/posts/nirmit-khurana-3852841a6_certificate-of-completion-activity-7284684579725033472-mfrD?utm_source=share&utm_medium=member_desktop&rcm=ACoAADAYHRUBBd2D6cCsHdI-n7Fi2qO9HveZ1eM',
     },
     {
         name: 'Data Analytics Essentials',
@@ -40,7 +40,7 @@ const certifications = [
         tags: ['Data Analytics', 'Networking', 'Fundamentals'],
         issued: '2025',
         certLink: 'https://www.cisco.com/c/en/us/training-events/training-certifications/certifications.html',
-        linkedInLink: 'https://www.linkedin.com/feed/',
+        linkedInLink: 'https://www.linkedin.com/posts/nirmit-khurana-3852841a6_ref-dataanalytics-cisco-activity-7416505499124408320-namF?utm_source=share&utm_medium=member_desktop&rcm=ACoAADAYHRUBBd2D6cCsHdI-n7Fi2qO9HveZ1eM',
     },
     {
         name: 'JIRA Project Management',
@@ -49,8 +49,8 @@ const certifications = [
         status: 'Completed',
         tags: ['JIRA', 'Project Management', 'Agile'],
         issued: '2025',
-        certLink: 'https://www.mygreatlearning.com/',
-        linkedInLink: 'https://www.linkedin.com/feed/',
+        certLink: 'https://www.mygreatlearning.com/academy/learn-for-free/courses/jira-project-management',
+        linkedInLink: 'https://www.linkedin.com/posts/nirmit-khurana-3852841a6_70dayhard-70dayhard-70dayhard-activity-7415425878009999360-JScv?utm_source=share&utm_medium=member_desktop&rcm=ACoAADAYHRUBBd2D6cCsHdI-n7Fi2qO9HveZ1eM',
     },
     {
         name: 'Introduction to Programming Using Python',
@@ -60,7 +60,7 @@ const certifications = [
         tags: ['Python', 'Programming', 'Coding'],
         issued: '2025',
         certLink: 'https://www.hackerrank.com/skills-verification',
-        linkedInLink: 'https://www.linkedin.com/feed/',
+        linkedInLink: null,
     },
     {
         name: 'Introduction to Data Analytics',
@@ -69,8 +69,8 @@ const certifications = [
         status: 'Completed',
         tags: ['Data Analytics', 'Fundamentals', 'Introduction'],
         issued: '2025',
-        certLink: 'https://www.simplilearn.com/',
-        linkedInLink: 'https://www.linkedin.com/feed/',
+        certLink: 'https://www.simplilearn.com/learn-data-analytics-for-beginners-skillup?term=data',
+        linkedInLink: 'https://www.linkedin.com/posts/nirmit-khurana-3852841a6_70dayhard-70dayhard-businessimpact-activity-7414697327178706944-svak?utm_source=share&utm_medium=member_desktop&rcm=ACoAADAYHRUBBd2D6cCsHdI-n7Fi2qO9HveZ1eM',
     },
     // In Progress
     {
