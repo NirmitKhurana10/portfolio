@@ -33,7 +33,7 @@ const items = [
     ],
   },
   {
-    jobTitle: 'Analyst',
+    jobTitle: 'Business Analyst',
     company: 'Avon Quality Management',
     companyUrl: 'https://avonquality.com',
     companyLogo: '/static/images/Company/Avon_Quality_Management_final_logo.webp',
